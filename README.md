@@ -1,81 +1,38 @@
-# Próximos Proyectos
+# sv
 
-## 📘 Bitcaroa – Libreta Digital
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-> Un lugar para registrar ideas, tareas, planes y todo lo que hago en internet. Me gustaría analizarlo después.
+## Creating a project
 
-### ✅ To-do
+If you're seeing this, you've probably already done this step. Congrats!
 
-- [ ] Inicializar el Proyecto
-  - [ ] CLI (entrada rápida desde la terminal)
-  - [ ] Web (interfaz principal)
-  - [ ] API (backend modular)
-- [ ] Estructura del contenido
-  - [ ] Tipos de entrada: Idea, Meta, Tarea, Diario
-  - [ ] Sistema de etiquetas y categorías
-  - [ ] Prioridades
-- [ ] Funcionalidades clave
-  - [ ] Crear, editar, eliminar entradas
-  - [ ] Filtros y búsqueda
-  - [ ] Estadísticas básicas (¿cuándo escribo más?, ¿qué temas repito?)
-  - [ ] Exportación (Markdown / JSON / PDF)
-- [ ] Metas a corto plazo
-  - [ ] Definir MVP
-  - [ ] Bocetar la interfaz
-  - [ ] Hacer el primer registro
+```bash
+# create a new project in the current directory
+npx sv create
 
----
+# create a new project in my-app
+npx sv create my-app
+```
 
-## 🕒 Checador – Control de entradas y salidas
+## Developing
 
-> Quiero saber cuánto tiempo dedico a cada cosa. Y si aplico esto con otras personas, también me puede servir para proyectos en equipo o freelance.
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-### ✅ To-do
+```bash
+npm run dev
 
-- [ ] Registro de usuarios
-- [ ] Captura de entrada y salida
-- [ ] Cálculo de tiempo trabajado
-- [ ] Agenda por usuario
-- [ ] Validaciones:
-  - [ ] Entrada < Salida
-  - [ ] Tiempo < mínimo → alerta
-  - [ ] Tiempo > máximo → alerta
-  - [ ] Fuera de agenda → alerta
-- [ ] Bitácora de registros anómalos
-- [ ] Dashboard simple con resumen de asistencias
-- [ ] Tests básicos de validaciones
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
 
----
+## Building
 
-## 💵 Nómina – Extensión del checador
+To create a production version of your app:
 
-> Si ya sé cuánto tiempo se trabaja, puedo calcular el sueldo. Esta parte conecta con el checador.
+```bash
+npm run build
+```
 
-### ✅ To-do
+You can preview the production build with `npm run preview`.
 
-- [ ] Salario base por hora
-- [ ] Horas extra
-  - [ ] x2 si son < 9h
-  - [ ] x3 si son ≥ 9h
-- [ ] Días festivos (x3 por hora)
-- [ ] Bonos manuales
-- [ ] Descuentos (ausencias, préstamos)
-- [ ] Reportes:
-  - [ ] Por usuario
-  - [ ] Por grupo
-  - [ ] Global
-- [ ] Exportar reporte a Excel o PDF
-- [ ] Historial de pagos
-
----
-
-## 🧠 Ideas generales para todos los proyectos
-
-- [ ] Sistema de usuarios con login y roles (si aplica)
-- [ ] Panel básico para ver datos / estadísticas
-- [ ] Tests desde el inicio
-- [ ] Exportar datos fácilmente (JSON / Excel / PDF)
-- [ ] Código limpio, con README por carpeta
-- [ ] Guardar los avances aunque sean pequeños 😄
-
----
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

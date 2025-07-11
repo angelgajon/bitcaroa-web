@@ -1,0 +1,64 @@
+
+# Dependencias de Node.js
+node_modules/
+
+# Archivos generados por SvelteKit/Vite
+.output
+.vercel
+.netlify
+.wrangler
+/.svelte-kit
+/build
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.*
+!.env.development.public
+!.env.test
+
+# Archivos de compilación y bundling
+vite.config.ts.timestamp*
+vite.config.js.timestamp*
+
+# Archivos de caché y temporales
+.cache/
+*.log
+*.log.*
+
+# Archivos de cobertura de pruebas
+coverage/
+lcov-report/
+
+# Archivos de pruebas de Playwright (si usas Playwright)
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Archivos de configuración de IDEs y editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de paquetes de npm/pnpm/yarn
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Archivos de compilación estática (si usas adaptadores estáticos)
+static/
+
+# Archivos generados por herramientas específicas (por ejemplo, Vercel, Netlify)
+.vercel/
+.netlify/
+
+*storybook.log
+storybook-static
